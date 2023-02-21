@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tip calculator</title>
+   <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <div class="container">
+     <header class="header">
+<h1>Tip calculator</h1>
+      </header>
+      <section>
+         <div class="enter-bill-amount">
+         <label for="bill-amount">Enter your bill amount</label><br>
+         <input type="number" id="billAmount" placeholder="Rs"/>
+         </div>
+         <div class="service-experience-class">
+         <label for="service-experience">How was the service?</label><br>
+         <select id="serviceExperience">
+            <option value="Excellent" id="excellent">Excellent 20%</option>
+            <option value="Medium" id="medium">Medium 10%</option>
+            <option value="NotSoGood" id="notGood">Not so good 5%</option>
+         </select>
+         </div>
+         <div class="bill-sharing-class">
+            <label for="bill-sharing">How many people are sharing the bill?</label><br>
+            <input type="number" id="billSharing" min="0"/>
+         </div>
+      </section>
+      <footer class="footer">
+         <button id="calculate">Calculate</button>
+         <h3 id="tip-amount">Tip Amount</h3>
+         <h3 id="output">Output</h3>
+      </footer>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
